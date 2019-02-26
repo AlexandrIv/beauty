@@ -1,0 +1,93 @@
+.blog-front-section h3 {
+	text-align: center;
+	color: #343436;
+	font-family: "Noto Sans";
+	font-size: 47px;
+	font-weight: 700;
+	line-height: 21px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.blog-front-section article {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.blog-front-section article .thumbnail {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.blog-front-section article .thumbnail img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+.blog-front-section article .thumbnail .info-box {
+	position: absolute;
+	bottom: 35px;
+	text-align: center;
+	width: 100%;
+}
+
+.blog-front-section article .thumbnail .info-box .date {
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 21px;
+	margin-bottom: 15px;
+}
+
+.blog-front-section article .thumbnail .info-box .title {
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 21px;
+}
+
+.blog-front-section article .thumbnail .gradien-box::after {
+	background: transparent;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0.1) 100%);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.blog-front-section article p {
+	color: #777777;
+	font-family: "Noto Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 29px;
+	text-align: center;
+}
+
+.blog-front-section article a {
+	text-align: center;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 21px;
+	text-decoration: none;
+	border-radius: 5px;
+
+	background-color: #00c8c8;
+	padding: 15px 25px;
+}
+
+
+

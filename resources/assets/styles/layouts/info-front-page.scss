@@ -1,0 +1,44 @@
+.info-section {
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+	padding-top: 70px;
+}
+
+.info-section article {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.info-section article .thumbnail {
+	margin-right: 20px;
+}
+
+.info-section article .info h3 {
+	color: #777777;
+	font-family: "Noto Sans";
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 21px;
+}
+
+.info-section article .info p {
+	color: #777777;
+	font-family: "Noto Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+
+
+
+
+
+
+
+
+

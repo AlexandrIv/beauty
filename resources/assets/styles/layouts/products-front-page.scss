@@ -1,0 +1,238 @@
+.products-section {
+	width: 100%;
+	height: auto;
+}
+
+/* the slides */
+.products-section .slider .slick-slide {
+	margin: 0 10px;
+	width: auto;
+	height: auto;
+}
+/* the parent */
+.products-section .slider .slick-list {
+	margin: 0 -10px;
+}
+
+.products-section .slider .slide a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 30px;
+	width: 100%;
+	height: auto;
+}
+
+.products-section .slider .slide .new {
+	width: auto;
+	height: auto;
+	padding: 0 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #343436;
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 29px;
+}
+
+.products-section .slider .slide .images-block img {
+	height: auto;
+	display: inline-block;
+	z-index: 1;
+}
+
+.products-section .slider .slide {
+	border: 1px solid lightgray;
+	position:relative;
+	overflow:hidden;
+}
+
+.products-section .slider .slide:focus {
+	outline: none;
+}
+
+.products-section .slider .slide .images-block {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+}
+
+.products-section .slider .slide .images-block .hovere-current {
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: #33d3d3;
+	opacity: 0.8;
+	text-align: center;
+	margin-top: -50px;
+	bottom: -50px;
+	z-index: 5;
+	transition-duration: 0.3s;
+	position: absolute;
+}
+
+.products-section .slider .slide .images-block .hovere-current a {
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 0;
+	width: 100%;
+	height: auto;
+}
+
+.products-section .slider .slide:hover .images-block .hovere-current {
+	bottom: 0;
+}
+
+.products-section .slider .slide .price {
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	background-color: #343436;
+	color: #ffffff;
+	font-family: "Noto Sans";
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 21px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.products-section .slider .slide .price p {
+	margin-bottom: 0;
+}
+
+.products-section .slider .slide .price span {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.products-section .slider .slide .price .full-price {
+	text-decoration: line-through;
+	font-family: "Noto Sans";
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: line-through;
+	margin-left: 8px;
+}
+
+.products-section .slider .slide .price .discount {
+	position: relative;
+	left: 20px;
+	float: right;
+	font-size: 13px;
+	line-height: 15px;
+	color: #ffffff;
+	font-family: "Noto Sans";
+	background-color: #00c8c8;
+	border-radius: 50px;
+	padding: 10px
+}
+
+.products-section .slider .slide .info-product p {
+	text-align: center;
+	color: #777777;
+	font-family: "Noto Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 29px;
+	padding: 0 25px;
+	padding-top: 15px;
+}
+
+.products-section .slider .slide .info-product ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.products-section .slider .slide .info-product ul li {
+	display: inline-block;
+}
+
+.products-section .slider .slide .info-product ul li {
+	padding: 5px;
+}
+
+.products-section .slider .slide .info-product ul li:nth-child(1) a {
+	background-color: #00c8c8;
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 2px;
+}
+
+.products-section .slider .slide .info-product ul li:nth-child(2) a {
+	background-color: #ffffff;
+	border: 1px solid #ebebeb;
+	padding: 10px 15px;
+	color: #c8c8c8;
+	border-radius: 2px;
+}
+
+
+.products-section .slider .slick-prev:before, .slick-next:before {
+	color: #d3d3d3;
+}
+
+.slick-next {
+	right: -50px;
+}
+
+.slick-prev {
+	left: -50px;
+}
+
+
+
+
+
+.products-section .slider .slick-prev {
+	z-index: 100;
+}
+
+.products-section .slider .slick-next {
+	z-index: 100;
+	height: 40px;
+	width: 40px;
+}
+
+.products-section .slider .slick-next:before {
+	color: #343436;
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f105";
+	font-size: 41px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.products-section .slider .slick-prev:before {
+	color: #343436;
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f104";
+	font-size: 41px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+
+
