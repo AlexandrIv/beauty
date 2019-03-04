@@ -1,11 +1,10 @@
 @extends('layouts.app')
-@include('partials.header-front-page')
 @section('content')
-{{-- @include('partials.presents-front-page')
-@include('partials.products-front-page')
-@include('partials.info-front-page')
-@include('partials.one-shop-front-page')
-@include('partials.blog-front-page')
-@include('partials.two-shop-front-page')
-@include('partials.footer-front-page') --}}
+@include('partials.front-page-presents')
+@include('partials.front-page-products')
+@include('partials.front-page-info')
+@include('partials.front-page-one-shop')
+@include('partials.front-page-blog')
+@include('partials.front-page-two-shop')
+@include('partials.front-page-footer')
 @endsection

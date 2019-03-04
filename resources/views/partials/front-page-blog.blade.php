@@ -1,8 +1,8 @@
-<div class="blog-front-section">
-	<h3>Our blog</h3>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
+<section>
+	<div class="contain">
+		<div class="blog-front-section">
+			<div class="blog-front-section">
+				<h3>Our blog</h3>
 				<article>
 					<div class="thumbnail">
 						<img src="@asset('images/post-img1.png')" alt="">
@@ -15,8 +15,7 @@
 					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<a href="#">Read more</a>
 				</article>
-			</div>
-			<div class="col-md-6">
+
 				<article>
 					<div class="thumbnail">
 						<img src="@asset('images/post-img2.png')" alt="">
@@ -29,8 +28,6 @@
 					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<a href="#">Read more</a>
 				</article>
-			</div>
-			<div class="col-md-6">
 				<article>
 					<div class="thumbnail">
 						<img src="@asset('images/post-img3.png')" alt="">
@@ -43,8 +40,6 @@
 					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<a href="#">Read more</a>
 				</article>
-			</div>
-			<div class="col-md-6">
 				<article>
 					<div class="thumbnail">
 						<img src="@asset('images/post-img4.png')" alt="">
@@ -60,4 +55,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>

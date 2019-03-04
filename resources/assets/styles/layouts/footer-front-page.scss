@@ -3,74 +3,215 @@
 	height: 500px;
 	background-color: #e2e2e2;
 }
-
 footer {
 	width: 100%;
 	height: auto;
 	background: #f2f2f2;
+	.contain {
+		width: 70%;
+		margin: 0 auto;
+		padding: 50px 0;
+		.footer-block {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			@media only screen and (max-width : 992px) {
+				flex-direction: column;
+			}
+			.footer-block-box {
+				width: 50%;
+				height: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				@media only screen and (max-width : 992px) {
+					width: 100%;
+					padding-bottom: 30px;
+				}
+				.footer-box {
+					h3 {
+						color: #343436;
+						font-family: "Noto Sans";
+						font-size: 15px;
+						font-weight: 700;
+						line-height: 21px;
+						margin-bottom: 15px;
+					}
+					ul {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						li {
+							a {
+								text-decoration: none;
+								color: #777777;
+								font-family: "Noto Sans";
+								font-size: 13px;
+								font-weight: 400;
+								line-height: 30px;
+								transition: 0.3s;
+							}
+							a:hover {
+								transition: 0.3s;
+								color: #00c8c8;
+							}
+						}
+					}
+				}
+				.footer-contact {
+					@media only screen and (max-width : 992px) {
+						width: 100%;
+					}
+					.newsletter {
+						background: #00c8c8;
+						padding: 30px;
+						position: relative;
+						display: inline-block;
+						width: 100%;
+						height: auto;
+						margin-bottom: 15px;
+						label {
+							width: 100%;
+							height: auto;
+							position: relative;
+							h3 {
+								color: #ffffff;
+								font-family: "Noto Sans";
+								font-size: 20px;
+								font-weight: 700;
+								line-height: 21px;
+								@media only screen and (max-width : 992px) {
+									text-align: center;
+								}
+							}
+							.search-input {
+								width: 100%;
+								height: auto;
+								position: relative;
+								display: flex;
+								align-items: center;
+								input {
+									width: 100%;
+									height: auto;
+									outline: none;
+									border: none;
+									border-radius: 5px;
+									position: relative;
+									padding: 10px 15px;
+									font-family: "Noto Sans";
+									font-size: 13px;
+									color: #777777;
+								}
+								input::placeholder {
+									color: #777777;
+									font-family: "Noto Sans";
+									font-size: 12px;
+									font-weight: 400;
+									line-height: 40px;
+								}
+								a {
+									display: flex;
+									position: absolute;
+									right: 0;
+									padding: 10px;
+									text-decoration: none;
+									i {
+										color: #777777;
+										font-size: 20px;
+										line-height: 20px;
+										transition: 0.3s;
+									}
+								}
+								a:hover {
+									i {
+										transition: 0.3s;
+										color: #00c8c8;
+									}
+								}
+							}
+						}
+					}
+					.store {
+						margin: 15px 0;
+						@media only screen and (max-width : 992px) {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+						h3 {
+							color: #343436;
+							font-family: "Noto Sans";
+							font-size: 15px;
+							font-weight: 700;
+							line-height: 21px;
+							margin-bottom: 15px;
+						}
+						ul {
+							list-style-type: none;
+							margin: 0;
+							padding: 0;
+							text-align: center;
+							li {
+								color: #777777;
+								font-family: "Noto Sans";
+								font-size: 13px;
+								font-weight: 400;
+								line-height: 21px;
+								padding: 5px 0;
+								a {
+									color: #777777;
+									font-family: "Noto Sans";
+									font-size: 13px;
+									font-weight: 400;
+									line-height: 21px;
+									text-decoration: none;
+									transition: 0.3s;
+								}
+								a:hover {
+									transition: 0.3s;
+									color: #00c8c8;
+								}
+								span {
+									font-family: "Noto Sans";
+									font-size: 24px;
+									font-weight: 700;
+									line-height: 35px;
+									color: #333333;
+									a {
+										color: #00c8c8;
+										font-family: "Noto Sans";
+										font-size: 13px;
+										font-weight: 400;
+										line-height: 27px;
+										text-decoration: underline;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.right {
+				justify-content: center;
+			}
+			.left {
+				@media only screen and (max-width : 768px) {
+					flex-direction: column;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
 }
 
-footer h3 {
-	color: #343436;
-	font-family: "Noto Sans";
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 21px;
-	margin-bottom: 15px;
-}
-
-.footer-menu {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-footer .footer-menu li a {
-	text-decoration: none;
-	color: #777777;
-	font-family: "Noto Sans";
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 30px;
-}
-
-.newsletter {
-	background: #00c8c8;
-	padding: 30px;
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	height: auto;
-}
-
-.newsletter h3 {
-	color: #ffffff;
-	font-family: "Noto Sans";
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 21px;
-}
-
-.newsletter input {
-	width: 100%;
-	height: auto;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	position: relative;
-}
-
-.newsletter input::placeholder {
-	color: #777777;
-	font-family: "Noto Sans";
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 40px;
-}
 
 
-.newsletter .search {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+
+
+
+

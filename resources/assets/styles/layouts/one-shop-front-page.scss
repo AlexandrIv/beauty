@@ -1,68 +1,96 @@
-.shop-section {
+section {
 	width: 100%;
-	height: 600px;
-	display: inline-block; 
-	position: relative;
-
-	/*background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;*/
-}
-
-.bg-box {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: #000;
-	opacity: 0.2;
-}
-
-
-.shop-section .shop-section-block {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-
-.shop-section .shop-section-block h1 {
-	color: #ffffff;
-	font-family: "Noto Sans";
-	font-size: 67px;
-	font-weight: 700;
-	line-height: 89px;
-	margin-bottom: 45px;
-}
-
-.shop-section .shop-section-block h1 span {
-	display: inline-block;
-}
-
-.shop-section .shop-section-block p {
-	color: #ffffff;
-	font-family: "Noto Sans";
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 29px;
-	margin-bottom: 50px;
-}
-
-.shop-section .shop-section-block a {
-	color: #ffffff;
-	font-family: "Noto Sans";
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 21px;
-	padding: 20px 35px;
-	background-color: #00c8c8;
-	text-decoration: none;
+	height: auto;
+	.shop-section {
+		width: 100%;
+		height: 600px;
+		position: relative;
+		.bg-box {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: #000;
+			opacity: 0.2;
+		}
+		.shop-section-block {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 70%;
+			margin: 0 auto;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			h1 {
+				color: #ffffff;
+				font-family: "Noto Sans";
+				font-size: 67px;
+				font-weight: 700;
+				line-height: 89px;
+				margin-bottom: 45px;
+				@media only screen and (max-width : 1200px) {
+					font-size: 57px;
+					line-height: 69px;
+					margin-bottom: 40px;
+				}
+				@media only screen and (max-width : 992px) {
+					font-size: 35px;
+					line-height: 47px;
+					margin-bottom: 35px;
+				}
+				@media only screen and (max-width : 768px) {
+					font-size: 30px;
+					line-height: 37px;
+					margin-bottom: 30px;
+				}
+				@media only screen and (max-width : 480px) {
+					margin-bottom: 25px;
+				}
+				span {
+					display: inline-block;
+				}
+			}
+			p {
+				color: #ffffff;
+				font-family: "Noto Sans";
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 29px;
+				margin-bottom: 45px;
+				@media only screen and (max-width : 992px) {
+					line-height: 25px;
+					margin-bottom: 35px;
+				}
+				@media only screen and (max-width : 768px) {
+					margin-bottom: 30px;
+				}
+			}
+			a {
+				color: #ffffff;
+				font-family: "Noto Sans";
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 21px;
+				padding: 20px 35px;
+				background-color: #00c8c8;
+				text-decoration: none;
+				transition: 0.3s;
+			}
+			a:hover {
+				background-color: #00dbdb;
+				color: #fff;
+				transition: 0.3s;
+			}
+		}
+		
+	}
 }

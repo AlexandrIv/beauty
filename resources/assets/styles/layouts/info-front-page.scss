@@ -1,44 +1,77 @@
-.info-section {
+section {
 	width: 100%;
 	height: auto;
-	background-color: #f2f2f2;
-	padding-top: 70px;
+	.info-section {
+		width: 100%;
+		height: auto;
+		background-color: #f2f2f2;
+		.cont {
+			width: 70%;
+			height: auto;
+			margin: 0 auto;
+			padding: 5% 0;
+			@media only screen and (max-width : 992px) {
+				width: 100%;
+			}
+			.info-secrion-block {
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				@media only screen and (max-width : 768px) {
+					flex-direction: column;
+				}
+				@media only screen and (max-width : 992px) {
+					width: 90%;
+					margin: 0 auto;
+				}
+				article {
+					width: 48%;
+					height: auto;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					margin: 2% auto;
+					@media only screen and (max-width : 768px) {
+						width: 90%;
+						margin: 5% auto;
+					}
+					@media only screen and (max-width : 480px) {
+						width: 100%;
+						margin: 5%	auto;
+						flex-direction: column;
+					}
+					.thumbnail {
+						margin-right: 20px;
+					}
+					.info {
+						@media only screen and (max-width : 480px) {
+							text-align: center;
+						}
+						h3 {
+							color: #777777;
+							font-family: "Noto Sans";
+							font-size: 23px;
+							font-weight: 700;
+							line-height: 32px;
+						}
+						p {
+							color: #777777;
+							font-family: "Noto Sans";
+							font-size: 13px;
+							font-weight: 400;
+							line-height: 29px;
+						}
+					}
+				}
+			}
+		}
+		
+	}
 }
-
-.info-section article {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 60px;
-}
-
-.info-section article .thumbnail {
-	margin-right: 20px;
-}
-
-.info-section article .info h3 {
-	color: #777777;
-	font-family: "Noto Sans";
-	font-size: 23px;
-	font-weight: 700;
-	line-height: 21px;
-}
-
-.info-section article .info p {
-	color: #777777;
-	font-family: "Noto Sans";
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 29px;
-}
-
-
-
-
-
-
-
-
 
 

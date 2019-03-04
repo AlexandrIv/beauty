@@ -83,11 +83,20 @@ array_map(
     array_fill(0, 4, 'dirname')
 );
 Container::getInstance()
-    ->bindIf('config', function () {
-        return new Config([
-            'assets' => require dirname(__DIR__).'/config/assets.php',
-            'theme' => require dirname(__DIR__).'/config/theme.php',
-            'view' => require dirname(__DIR__).'/config/view.php',
-        ]);
-    }, true);
+->bindIf('config', function () {
+    return new Config([
+        'assets' => require dirname(__DIR__).'/config/assets.php',
+        'theme' => require dirname(__DIR__).'/config/theme.php',
+        'view' => require dirname(__DIR__).'/config/view.php',
+    ]);
+}, true);
 
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
